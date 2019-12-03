@@ -15,7 +15,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Button setting = findViewById(R.id.mainMenuSetting);
+        Button exit = findViewById(R.id.mainMenuExit);
+        Button start = findViewById(R.id.mainMenuStart);
         setting.setOnClickListener(this);
+        exit.setOnClickListener(this);
+        start.setOnClickListener(this);
     }
 
     @Override
@@ -25,6 +29,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);
                 break;
+            }
+
+            case R.id.mainMenuExit : {
+                finish();
+                break;
+            }
+
+            case R.id.mainMenuStart : {
+                SharePrefHelper sharePrefHelper = new SharePrefHelper(MainActivity.this);
+                String gameSizeValue = sharePrefHelper.getGameSize();
+                if (gameSizeValue == "4") {
+                    Intent intent = new Intent(MainActivity.this, Game1Activity.class);
+                    startActivity(intent);
+                } else if (gameSizeValue == "5"){
+                    Intent intent = new Intent(MainActivity.this, Game2Activity.class);
+                    startActivity(intent);
+                } else if (gameSizeValue == "6"){
+                    Intent intent = new Intent(MainActivity.this, Game3Activity.class);
+                    startActivity(intent);
+                }
             }
         }
     }
