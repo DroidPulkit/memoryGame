@@ -9,7 +9,7 @@ public class SharePrefHelper {
 
     private static final String SHARED_PREF_NAME = "Settings";
 
-    SharedPreferences sharedPreferences = null;
+    private SharedPreferences sharedPreferences = null;
 
     public SharePrefHelper(Context context){
         mContext = context;

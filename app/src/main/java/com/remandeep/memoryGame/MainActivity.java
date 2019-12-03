@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.mainMenuSetting : {
-                Intent intent = new Intent(this, SettingsActivity.class);
+                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 break;
             }
@@ -39,13 +39,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.mainMenuStart : {
                 SharePrefHelper sharePrefHelper = new SharePrefHelper(MainActivity.this);
                 String gameSizeValue = sharePrefHelper.getGameSize();
-                if (gameSizeValue == "4") {
+                if (gameSizeValue.equals("4")) {
                     Intent intent = new Intent(MainActivity.this, Game1Activity.class);
                     startActivity(intent);
-                } else if (gameSizeValue == "5"){
+                } else if (gameSizeValue.equals("5")) {
                     Intent intent = new Intent(MainActivity.this, Game2Activity.class);
                     startActivity(intent);
-                } else if (gameSizeValue == "6"){
+                } else if (gameSizeValue.equals("6")) {
                     Intent intent = new Intent(MainActivity.this, Game3Activity.class);
                     startActivity(intent);
                 }
