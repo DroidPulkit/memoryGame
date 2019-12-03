@@ -219,7 +219,7 @@ public class Game1Activity extends AppCompatActivity implements View.OnClickList
                                     twoBtnSelected = false;
                                 }
                             }, 3000);
-                            c.setEnabled(true);
+                            firstBtn.setEnabled(true);
                         }
                         //As second button is clicked, always make this false
                         firstBtnSelected = false;
