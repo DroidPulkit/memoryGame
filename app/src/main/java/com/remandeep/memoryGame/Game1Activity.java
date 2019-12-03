@@ -199,8 +199,12 @@ public class Game1Activity extends AppCompatActivity implements View.OnClickList
                             //Probably a match of numbers
                             //Disabling the btns onclicklistener
                             c.setEnabled(false);
-                            //Remove the hasmap
+                            //Remove the hashmap
                             buttonSelector.clear();
+                            //Update the score
+                            String s = score.getText().toString();
+                            String finalS = String.valueOf(Integer.valueOf(s) + 1);
+                            score.setText(finalS);
                         } else {
                             //No match of number
                             //We will keep showing the number for the 3 seconds
