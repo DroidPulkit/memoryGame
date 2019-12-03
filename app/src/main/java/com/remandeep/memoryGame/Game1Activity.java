@@ -77,6 +77,13 @@ public class Game1Activity extends AppCompatActivity implements View.OnClickList
         String waitingTime = sharePrefHelper.getStartingWait();
         showAllCellForTime(waitingTime);
 
+        //Find if we need to show timer or not
+        Boolean enableTimer = sharePrefHelper.getTimer();
+        if (!enableTimer){
+            timer.stop();
+            findViewById(R.id.timerLayout).setVisibility(View.GONE);
+        }
+
         enableClickAndShowNumber();
     }
 
@@ -95,6 +102,7 @@ public class Game1Activity extends AppCompatActivity implements View.OnClickList
                 intent.putExtra("score", finalScore);
                 intent.putExtra("time", time);
                 startActivity(intent);
+                finish();
 
                 //Then move to the result screen
             }
