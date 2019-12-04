@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/darker_gray"
+    android:background="@android:color/holo_orange_light"
     tools:context=".Game1Activity">
 
     <!-- Title -->
@@ -81,25 +81,33 @@
                 android:id="@+id/gameCell1"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell2"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell3"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell4"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -111,25 +119,33 @@
                 android:id="@+id/gameCell5"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell6"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell7"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell8"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -141,25 +157,33 @@
                 android:id="@+id/gameCell9"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell10"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell11"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell12"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
         </LinearLayout>
         <LinearLayout
@@ -171,25 +195,33 @@
                 android:id="@+id/gameCell13"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell14"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell15"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
             <Button
                 android:id="@+id/gameCell16"
                 android:layout_width="0sp"
                 android:layout_height="60sp"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:layout_margin="4sp"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -203,6 +235,9 @@
         android:layout_marginTop="25sp"
         android:layout_marginLeft="12sp"
         android:layout_marginRight="12sp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:textSize="19sp"
         android:text="END GAME" />
 
 </LinearLayout>
