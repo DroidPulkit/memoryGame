@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@android:color/darker_gray"
     tools:context=".Game1Activity">
+
+    <!-- Title -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MEMORY GAME"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16sp"/>
 
     <!-- Timer -->
     <LinearLayout
@@ -13,16 +25,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="16sp"
         android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Time : " />
+            android:text="Time : "
+            android:textSize="20sp"/>
         <Chronometer
             android:id="@+id/gameScreenTimer"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -32,18 +47,21 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="16sp"
         android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Score : " />
+            android:text="Score : "
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/gameScreenScore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0" />
+            android:text="0"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -51,7 +69,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="20sp"
+        android:padding="8sp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -180,6 +200,9 @@
         android:id="@+id/gameScreenEndGameBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginLeft="12sp"
+        android:layout_marginRight="12sp"
         android:text="END GAME" />
 
 </LinearLayout>
